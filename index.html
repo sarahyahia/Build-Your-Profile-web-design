@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="stylesheet" href="css/bootstrap.min.css" />
+	    <link rel="stylesheet" href="css/stylesheet.css" />
+		<title>HomePage</title>
+	</head>
+	<body>
+      <div class="row" style="padding: 5%;"></div>
+      <div class="container bg-light" style="border-radius: 5px;">
+        <div class="row text-center" style="padding:10%">
+          <div class="text-center col-lg-12 col-md-12 ">
+            <h2>Build Your Profile</h2>
+            <p class="text-muted">This information will let us know more about you</p>
+          </div>
+        
+        </div>
+        
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <ul class="nav nav-pills nav-fill">
+            <li class="nav-item" style="border:1px #0275d8; border-radius: 3px;">
+              <a class="nav-link active" href="#">About</a>
+            </li>
+            <li class="nav-item bg-muted" style="border:1px solid #0275d8; border-radius: 3px;">
+              <a class="nav-link" href="#">Account</a>
+            </li>
+            <li class="nav-item bg-muted" style="border:1px solid #0275d8; border-radius: 3px;">
+              <a class="nav-link" href="#">Address</a>
+            </li>
+          </ul>
+        </div>
+        <div class="text-center">
+            <p class="text-muted text-center " style="padding-top: 5%;">Let's start with the basic information(with validation)</p>
+          </div>
+        <div class="row" style="padding:5%">
+          
+
+          <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-4 text-center" >
+              <img  id="camContainer" src="imgs/default-profile-picture1.jpg">
+              <canvas id="showscreenshot" ></canvas>
+              <video  autoplay="true" id="videoElement">
+              </video>
+              <button id="camBtn" type="button" class="btn btn-primary" onclick="showCam();">Camera pic</button>
+              <button id="screenshot" onclick="takescreenshot();" type="button" class="btn btn-primary">take the photo</button>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-4" style="margin-top:5%;">
+             
+              <input class="row bg-muted" type="text" placeholder="first name (required)" style="width:100%;">
+              <br>
+             
+              <input class="row bg-muted" type="text" placeholder="last name (required)" style="width:100%;">
+            </div>
+            <div class="col-lg-1"></div>
+          </div>
+          
+          <div class="row" style="margin: 5%; padding: 0;">
+            <div class="row">
+              <div class="col-lg-2 col-md-2 col-sm-0"></div>
+              <svg class="col-lg-2 col-md-2 col-sm-3" style="padding-right: 0;" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+              </svg>
+              <div class="bg-muted col-lg-6 col-md-6 col-sm-9" style="padding-right: 0; padding-left: 0;" >
+                <input type="email" placeholder="Email (required)" style="width: 100%">
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-0"></div>
+            </div>
+            
+          </div>
+          <div class="row p-5">
+              <button style="float: right;" type="button" class="btn btn-primary">Next</button>
+          </div>
+
+        
+      </div>  
+    </div>
+
+    <script src="js/jquery.min.js" ></script>
+	  <script src="js/bootstrap.min.js" ></script>
+	  <script src="js/main.js" ></script>
+
+	</body>
+</html>

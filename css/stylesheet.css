@@ -1,0 +1,42 @@
+html{
+	height: auto;
+}
+body{
+	
+	max-width: 100%;
+	background-image: url(../imgs/blue.jpg);
+	height: 100%;
+	margin-bottom: 10%;
+}
+
+img,video{
+	
+	max-width:70%;
+	height:auto;
+}
+			.active {
+				background-color: #999
+			}
+
+input{
+	border: none;
+	border-bottom: 1px solid black;
+	
+}
+
+#camBtn{
+	float: center;
+	margin-top:1%;
+}
+
+#screenshot{
+	float: center; 
+	margin-top:1%; 
+	display: none;
+}
+video{
+	display: none;
+}
+canvas{
+	display: none;
+}
